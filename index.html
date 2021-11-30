@@ -1,0 +1,560 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apple</title>
+    <link rel="icon" href="assets/img/png-apple-logo-9710-64x64.ico" />
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+    crossorigin="anonymous"  />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+</head>
+
+<body>
+    <div class="fixed-header">
+    <aside id="location-switch">
+        <div class="loc-content">
+            <div class="loc-text1">Choose another country or region to see content specific to your location.</div>
+            <div class="loc-action">
+                <div id="loc-action-dropdown" class="ac-ls-dropdown">
+                    <div id="ac-ls-dropdown-select" class="ac-ls-dropdown-select" type="text"
+                        ><span id="ac-ls-dropdown-title"><span
+                                class="ac-ls-dropdown-check"></span> <span class="ac-ls-dropdown-copy">India</span>
+                        </span><span id="ac-ls-dropdown-icon"
+                            class="ac-ls-dropdown-icon ac-ls-icon ac-ls-icon-chevron-down"></span></div>
+                    <div id="ac-ls-dropdown-options" class="ac-ls-dropdown-options">
+                        <!-- <ul class="ac-ls-itemlist"><span
+                                class="ac-ls-dropdown-icon ac-ls-icon ac-ls-icon-chevron-up"></span>
+                            <li id="ac-ls-dropdown-option-1"
+                                class="ac-ls-dropdown-option ac-ls-dropdown-nav-item"
+                                data-href="#"><span class="ac-ls-dropdown-check"></span> <span
+                                    class="ac-ls-dropdown-copy">India</span></li>
+                            <li id="ac-ls-dropdown-option-country-region"
+                                class="ac-ls-dropdown-option ac-ls-dropdown-nav-item"
+                                data-href="#"><span
+                                    class="ac-ls-dropdown-check"></span> <span class="ac-ls-dropdown-copy">Other country
+                                    or region</span></li>
+                        </ul> -->
+                    </div>
+                </div> <a href="/index.html" id="ac-ls-continue"
+                    class="ac-ls-button ac-ls-actions-item ac-ls-continue">Continue</a> <button
+                    id="ac-ls-close" class="ac-ls-close ac-ls-actions-item ac-ls-icon ac-ls-icon-close" >
+                    <!-- <span class="ac-ls-close-text"
+                        aria-label="Exit"></span> -->
+                        <!-- <span class="material-icons-outlined">
+                            close
+                            </span> -->
+                            <img src="assets/img/close_button.png" />
+                    </button>
+            </div>
+        </div>
+    </aside>
+    <nav id="ac-globalNav" class="js no-touch windows" >
+        <div class="ac-gn-content">
+            <ul class="ac-gn-list">
+                <li class="ac-gn-item ac-gn-apple">
+                    <a class="ac-gn-link ac-gn-link-apple" href="/"id="ac-gn-firstfocus">
+                        <img src="assets/img/globalnav_apple_image__cxwwnrj0urau_large.svg" />
+                        <!-- <span class="ac-gn-link-text">Apple</span> -->
+                    </a>
+                </li>
+                <li class="ac-gn-item ac-gn-item-menu ac-gn-store">
+                    <a class="ac-gn-link ac-gn-link-store" href="#">
+                        <span class="ac-gn-link-text">Store</span>
+                    </a>
+                </li>
+                <li class="ac-gn-item ac-gn-item-menu ac-gn-mac">
+                    <a class="ac-gn-link ac-gn-link-mac" href="#">
+                        <span class="ac-gn-link-text">Mac</span>
+                    </a>
+                </li>
+                <li class="ac-gn-item ac-gn-item-menu ac-gn-ipad">
+                    <a class="ac-gn-link ac-gn-link-ipad" href="#">
+                        <span class="ac-gn-link-text">iPad</span>
+                    </a>
+                </li>
+                <li class="ac-gn-item ac-gn-item-menu ac-gn-iphone">
+                    <a class="ac-gn-link ac-gn-link-iphone" href="#">
+                        <span class="ac-gn-link-text">iPhone</span>
+                    </a>
+                </li>
+                <li class="ac-gn-item ac-gn-item-menu ac-gn-watch">
+                    <a class="ac-gn-link ac-gn-link-watch" href="#">
+                        <span class="ac-gn-link-text">Watch</span>
+                    </a>
+                </li>
+                <li class="ac-gn-item ac-gn-item-menu ac-gn-tv">
+                    <a class="ac-gn-link ac-gn-link-tv" href="#">
+                        <span class="ac-gn-link-text">TV</span>
+                    </a>
+                </li>
+                <li class="ac-gn-item ac-gn-item-menu ac-gn-music">
+                    <a class="ac-gn-link ac-gn-link-music" href="#" >
+                        <span class="ac-gn-link-text">Music</span>
+                    </a>
+                </li>
+                <li class="ac-gn-item ac-gn-item-menu ac-gn-support">
+                    <a class="ac-gn-link ac-gn-link-support" href="#">
+                        <span class="ac-gn-link-text">Support</span>
+                    </a>
+                </li>
+                <li class="ac-gn-item ac-gn-item-menu " role="search">
+                    <a id="ac-gn-link-search" class="ac-gn-link ac-gn-link-search" href="#" aria-haspopup="true"></a>
+                    <!-- <img src="assets/img/globalnav_search_image__fca9mfoh8a2q_large.svg" style="width: 18px;" /> -->
+                </li>
+                <li class="ac-gn-item ac-gn-bag" id="ac-gn-bag">
+                    <div class="ac-gn-bag-wrapper">
+                        <a class="ac-gn-link ac-gn-link-bag" href="#" >
+                            <!-- <img src="assets/img/globalnav_bag_image__bmix8075eg4i_large.svg" /> -->
+                            <!-- <span class="ac-gn-link-text">Shopping Bag</span> -->
+                        </a>
+                        <span class="ac-gn-bag-badge" aria-hidden="true">
+                            <span class="ac-gn-bag-badge-separator"></span>
+                            <span class="ac-gn-bag-badge-number"></span>
+                            <span class="ac-gn-bag-badge-unit">+</span>
+                        </span>
+                    </div>
+                    <span class="ac-gn-bagview-caret ac-gn-bagview-caret-large"></span>
+                </li>
+            </ul>
+        </div>
+    </nav>
+</div>
+    <main class="main">
+    <div class="section-content section-content-shop-online">
+        <span class="shop-ribbon-copy">
+            We look forward to welcoming you to our stores. Whether you <a href="#" target="_self" data-analytics-title="shop retail - control">shop in a store</a> or <a href="/us/shop/goto/shop" target="_self" data-analytics-title="shop online - control"> shop online</a>, our Specialists can help you buy the products you&nbsp;love.
+        </span>
+    </div>
+    <div class="module-content">
+								
+        <div class="unit-wrapper">
+                <a class="unit-link" href="#" tabindex="-1">&nbsp;</a>
+            <div class="unit-copy-wrapper">
+                
+                            <h2 class="headline">iPhone 13 Pro</h2>
+                            <h3 class="subhead" role="presentation">Oh. So. Pro.</h3>
+                
+                    <div class="avail-wrapper">
+                        <p class="avail-msg">Available starting <span role="text">9.24</span></p>
+                    </div>
+                
+                
+                <div class="cta-links">
+                            <a class="icon icon-after icon-chevronright" href="#" >Learn more</a>
+                            <a class="icon icon-after icon-chevronright" href="#" >Pre-order</a>
+                </div>
+            </div>
+                <div class="unit-image-wrapper">
+                    <figure class="unit-image unit-image-iPhone-13-pro-hero-iPhone-13pro">
+                    </figure>
+                </div>
+        </div>
+    </div>
+    <div class="module-content">
+								
+        <div class="unit-wrapper theme-dark">
+                <a class="unit-link" href="#" >&nbsp;</a>
+            <div class="unit-copy-wrapper">
+                
+                            <h2 class="headline color-white">iPhone 13</h2>
+                            <h3 class="subhead color-specific" role="presentation">Your new superpower.</h3>
+                
+                    <div class="avail-wrapper">
+                        <p class="avail-msg">Available starting <span role="text" aria-label="September 24">9.24</span></p>
+                    </div>
+                
+                
+                <div class="cta-links">
+                            <a class="icon icon-after icon-chevronright" href="#" >Learn more</a>
+                            <a class="icon icon-after icon-chevronright" href="#" >Pre-order</a>
+                </div>
+            </div>
+                <div class="unit-image-wrapper">
+                    <figure class="unit-image unit-image-iphone-13-hero-iphone-13">
+                    </figure>
+                </div>
+        </div>
+    </div>
+    <div class="module-content">
+								
+        <div class="unit-wrapper">
+                <a class="unit-link" href="#" >&nbsp;</a>
+            <div class="unit-copy-wrapper">
+                
+                            <h2 class="logo-image logo-image-watch-series-7-watch-logo-lte headline">
+                                <!-- <span class="visuallyhidden">Apple Watch Series 7</span></h2> -->
+                    <h3 class="subhead" role="text">Full screen ahead.</h3>
+                
+                    <div class="avail-wrapper">
+                        <p class="avail-msg">Available later this fall</p>
+                    </div>
+                
+                
+                <div class="cta-links">
+                            <a class="icon icon-after icon-chevronright" href="#">Learn more</a>
+                </div>
+                
+            </div>
+                <div class="unit-image-wrapper">
+                    <figure class="unit-image unit-image-watch-series-7-hero-lte">
+                    </figure>
+                </div>
+        </div>
+    </div>
+    <section class="collection-module">
+    <div class="module-content">
+								
+        <div class="unit-wrapper">
+                <a class="unit-link" href="/us-hed/shop/back-to-school" >&nbsp;</a>
+            <div class="unit-copy-wrapper">
+                    <p class="violator-frameless" role="text" aria-label="Offer Ends September 27">Offer Ends 9/27</p>
+                            <h4 class="headline">Buy a Mac or iPad for college. Get&nbsp;AirPods.<sup><a class="footnote" href="#footnote-1" aria-label="Footnote 1">1</a></sup></h4>
+                
+                
+                <div class="cta-links">
+                            <a class="icon icon-after icon-chevronright" href="/us-hed/shop/back-to-school" target="_self" rel="follow" data-analytics-region="buy" data-analytics-title="Save with education pricing" aria-label="Save with education pricing">Save with education pricing</a>
+                </div>
+                
+            </div>
+                <div class="unit-image-wrapper">
+                    <figure class="unit-image unit-image-back-to-school-2021-promo-bts-last-chance">
+                    </figure>
+                </div>
+        </div>
+    </div>
+    <div class="module-content left-content">
+								
+        <div class="unit-wrapper">
+                <a class="unit-link" href="/us-hed/shop/back-to-school" >&nbsp;</a>
+            <div class="unit-copy-wrapper">
+                    <p class="violator-frameless" role="text" aria-label="Offer Ends September 27">Offer Ends 9/27</p>
+                            <h4 class="headline">Buy a Mac or iPad for college. Get&nbsp;AirPods.<sup><a class="footnote" href="#footnote-1" aria-label="Footnote 1">1</a></sup></h4>
+                
+                
+                <div class="cta-links">
+                            <a class="icon icon-after icon-chevronright" href="/us-hed/shop/back-to-school" target="_self" rel="follow" data-analytics-region="buy" data-analytics-title="Save with education pricing" aria-label="Save with education pricing">Save with education pricing</a>
+                </div>
+                
+            </div>
+                <div class="unit-image-wrapper">
+                    <figure class="unit-image unit-image-back-to-school-2021-promo-bts-last-chance">
+                    </figure>
+                </div>
+        </div>
+    </div>
+</section>
+<footer class="js flexbox" lang="en-US" id="ac-globalfooter" data-analytics-region="global footer" role="contentinfo" aria-labelledby="ac-gf-label" data-original-aria-hidden="">
+    <div class="ac-gf-content">
+        <h2 class="ac-gf-label" id="ac-gf-label">Apple Footer</h2>
+
+            <section class="ac-gf-sosumi" aria-label="Footnotes">
+
+                <ul>
+                    <li><span id="footnote-1">1. Qualified Purchasers receive Promotion Savings when they purchase an eligible Mac or eligible iPad with eligible AirPods at a Qualifying Location. Only one Promotion Product per eligible Mac or eligible iPad per Qualified Purchaser. Offer subject to availability. While supplies last. Qualified Purchasers selecting Apple&nbsp;Card Monthly&nbsp;Installments (“ACMI”) as payment type at checkout shall receive a discount equal to the value of the eligible AirPods off the price of the eligible Mac or iPad. This will result in one ACMI installment plan over 12 months for the eligible iPad or Mac discounted by the instant credit, and a second ACMI installment plan over 6 months for the full price of the eligible AirPods. Qualified Purchasers will be charged for all items in their cart, including the eligible AirPods plus any additional Upgrade Cost. If you choose the pay-in-full or one-time-payment option for an ACMI eligible purchase instead of choosing ACMI as the payment option at checkout, that purchase will be subject to the variable APR assigned to your Apple&nbsp;Card. Taxes and shipping are not included in ACMI transactions and are subject to your standard purchase APR. ACMI is subject to credit approval and credit limit. Variable APRs for Apple&nbsp;Card other than ACMI range from 10.99% to 21.99% based on creditworthiness. Rates as of April&nbsp;1,&nbsp;2020. See the Apple&nbsp;Card Customer&nbsp;Agreement for more information. Apple&nbsp;Card is issued by Goldman Sachs Bank USA, Salt&nbsp;Lake&nbsp;City Branch. Available for qualifying applicants in the United&nbsp;States. If you reside in the U.S. territories, please call Goldman Sachs at 877-255-5923 with questions about accessing this offer or applying for Apple&nbsp;Card. This offer cannot be combined with the Apple Employee&nbsp;Purchase&nbsp;Plan or business loyalty pricing. Availability of in-store promotion offerings may be limited by Apple&nbsp;Store location closures as a result of COVID-19. Additional restrictions apply. View full terms and conditions of offer&nbsp;<a href="/us-hed/shop/back-to-school/terms-conditions" data-original-tabindex="">here</a>.</span>
+</li>
+                    <li><span id="footnote-2">2. $9.99/month after free trial. No commitment. Plan automatically renews after trial until&nbsp;cancelled.</span></li>
+                    <li>To access and use all the features of Apple&nbsp;Card, you must add Apple&nbsp;Card to Wallet on an iPhone or iPad with the latest version of iOS or iPadOS. Update to the latest version by going to Settings &gt; General &gt; Software Update. Tap Download and&nbsp;Install.</li>
+                    <li>Available for qualifying applicants in the United&nbsp;States.</li>
+                    <li>Apple&nbsp;Card is issued by Goldman Sachs Bank USA, Salt&nbsp;Lake&nbsp;City&nbsp;Branch.</li>
+                    <li>Learn more about how Apple&nbsp;Card applications are evaluated at <a href="https://support.apple.com/kb/HT209218" data-original-tabindex="">support.apple.com/kb/HT209218</a>.</li>
+                    <li>Apple&nbsp;TV+ is $4.99/month after free trial. One subscription per Family&nbsp;Sharing group. Offer good for 3 months after eligible device activation. Plan automatically renews until cancelled. Restrictions and other <a href="/promo/" data-original-tabindex="">terms</a>&nbsp;apply.</li>
+                </ul>
+            </section>
+
+            <nav class="ac-gf-directory with-5-columns" aria-label="Apple Directory" role="navigation">
+    <!--googleoff: all-->
+    <div class="ac-gf-directory-column"><input class="ac-gf-directory-column-section-state" type="checkbox" id="ac-gf-directory-column-section-state-products" data-original-tabindex="">
+        <div class="ac-gf-directory-column-section">
+            <label class="ac-gf-directory-column-section-label" for="ac-gf-directory-column-section-state-products">
+                <h3 class="ac-gf-directory-column-section-title">Shop and Learn</h3>
+            </label>
+            <a href="#ac-gf-directory-column-section-state-products" class="ac-gf-directory-column-section-anchor ac-gf-directory-column-section-anchor-open" data-original-tabindex="">
+                <span class="ac-gf-directory-column-section-anchor-label">Open Menu</span>
+            </a>
+            <a href="#" class="ac-gf-directory-column-section-anchor ac-gf-directory-column-section-anchor-close" data-original-tabindex="">
+                <span class="ac-gf-directory-column-section-anchor-label">Close Menu</span>
+            </a>
+            <ul class="ac-gf-directory-column-section-list">
+                <li class="ac-gf-directory-column-section-item"><a class="ac-gf-directory-column-section-link" href="/mac/" data-analytics-title="mac" data-original-tabindex="">Mac</a></li>
+                <li class="ac-gf-directory-column-section-item"><a class="ac-gf-directory-column-section-link" href="/ipad/" data-analytics-title="ipad" data-original-tabindex="">iPad</a></li>
+                <li class="ac-gf-directory-column-section-item"><a class="ac-gf-directory-column-section-link" href="/iphone/" data-analytics-title="iphone" data-original-tabindex="">iPhone</a></li>
+                <li class="ac-gf-directory-column-section-item"><a class="ac-gf-directory-column-section-link" href="/watch/" data-analytics-title="watch" data-original-tabindex="">Watch</a></li>
+                <li class="ac-gf-directory-column-section-item"><a class="ac-gf-directory-column-section-link" href="/tv/" data-analytics-title="tv" data-original-tabindex="">TV</a></li>
+                <li class="ac-gf-directory-column-section-item"><a class="ac-gf-directory-column-section-link" href="/music/" data-analytics-title="music" data-original-tabindex="">Music</a></li>
+                <li class="ac-gf-directory-column-section-item"><a class="ac-gf-directory-column-section-link" href="/airpods/" data-analytics-title="airpods" data-original-tabindex="">AirPods</a></li>
+                <li class="ac-gf-directory-column-section-item"><a class="ac-gf-directory-column-section-link" href="/homepod/" data-analytics-title="homepod" data-original-tabindex="">HomePod</a></li>
+                <li class="ac-gf-directory-column-section-item"><a class="ac-gf-directory-column-section-link" href="/ipod-touch/" data-analytics-title="ipod touch" data-original-tabindex="">iPod touch</a></li>
+                <li class="ac-gf-directory-column-section-item"><a class="ac-gf-directory-column-section-link" href="/airtag/" data-analytics-title="airtag" data-original-tabindex="">AirTag</a></li>
+                <li class="ac-gf-directory-column-section-item"><a class="ac-gf-directory-column-section-link" href="/us/shop/goto/buy_accessories" data-analytics-title="accessories" data-original-tabindex="">Accessories</a></li>
+                <li class="ac-gf-directory-column-section-item"><a class="ac-gf-directory-column-section-link" href="/us/shop/goto/giftcards" data-analytics-title="gift cards" data-original-tabindex="">Gift Cards</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="ac-gf-directory-column">
+        <input class="ac-gf-directory-column-section-state" type="checkbox" id="ac-gf-directory-column-section-state-services" data-original-tabindex="">
+        <div class="ac-gf-directory-column-section">
+            <label class="ac-gf-directory-column-section-label" for="ac-gf-directory-column-section-state-services">
+                <h3 class="ac-gf-directory-column-section-title">Services</h3>
+            </label>
+            <a href="#ac-gf-directory-column-section-state-services" class="ac-gf-directory-column-section-anchor ac-gf-directory-column-section-anchor-open" data-original-tabindex="">
+                <span class="ac-gf-directory-column-section-anchor-label">Open Menu</span>
+            </a>
+            <a href="#" class="ac-gf-directory-column-section-anchor ac-gf-directory-column-section-anchor-close" data-original-tabindex="">
+                <span class="ac-gf-directory-column-section-anchor-label">Close Menu</span>
+            </a>
+            <ul class="ac-gf-directory-column-section-list">
+                <li class="ac-gf-directory-column-section-item"><a class="ac-gf-directory-column-section-link" href="/apple-music/" data-analytics-title="apple music" data-original-tabindex="">Apple&nbsp;Music</a></li>
+                <li class="ac-gf-directory-column-section-item"><a class="ac-gf-directory-column-section-link" href="/apple-tv-plus/" data-analytics-title="apple tv plus" data-original-tabindex="">Apple&nbsp;TV+</a></li>
+                <li class="ac-gf-directory-column-section-item"><a class="ac-gf-directory-column-section-link" href="/apple-fitness-plus/" data-analytics-title="apple fitness plus" data-original-tabindex="">Apple&nbsp;Fitness+</a></li>
+                <li class="ac-gf-directory-column-section-item"><a class="ac-gf-directory-column-section-link" href="/apple-news/" data-analytics-title="apple news plus" data-original-tabindex="">Apple&nbsp;News+</a></li>
+                <li class="ac-gf-directory-column-section-item"><a class="ac-gf-directory-column-section-link" href="/apple-arcade/" data-analytics-title="apple arcade" data-original-tabindex="">Apple&nbsp;Arcade</a></li>
+                <li class="ac-gf-directory-column-section-item"><a class="ac-gf-directory-column-section-link" href="/icloud/" data-analytics-title="icloud" data-original-tabindex="">iCloud</a></li>
+                <li class="ac-gf-directory-column-section-item"><a class="ac-gf-directory-column-section-link" href="/apple-one/" data-analytics-title="apple one" data-original-tabindex="">Apple&nbsp;One</a></li>
+                <li class="ac-gf-directory-column-section-item"><a class="ac-gf-directory-column-section-link" href="/apple-card/" data-analytics-title="apple card" data-original-tabindex="">Apple&nbsp;Card</a></li>
+                <li class="ac-gf-directory-column-section-item"><a class="ac-gf-directory-column-section-link" href="/apple-books/" data-analytics-title="apple books" data-original-tabindex="">Apple&nbsp;Books</a></li>
+                <li class="ac-gf-directory-column-section-item"><a class="ac-gf-directory-column-section-link" href="/apple-podcasts/" data-analytics-title="apple podcasts" data-original-tabindex="">Apple Podcasts</a></li>
+                <li class="ac-gf-directory-column-section-item"><a class="ac-gf-directory-column-section-link" href="/app-store/" data-analytics-title="app store" data-original-tabindex="">App&nbsp;Store</a></li>
+            </ul>
+        </div>
+        <input class="ac-gf-directory-column-section-state" type="checkbox" id="ac-gf-directory-column-section-state-accounts" data-original-tabindex="">
+        <div class="ac-gf-directory-column-section">
+            <label class="ac-gf-directory-column-section-label" for="ac-gf-directory-column-section-state-accounts">
+                <h3 class="ac-gf-directory-column-section-title">Account</h3>
+            </label>
+            <a href="#ac-gf-directory-column-section-state-accounts" class="ac-gf-directory-column-section-anchor ac-gf-directory-column-section-anchor-open" data-original-tabindex="">
+                <span class="ac-gf-directory-column-section-anchor-label">Open Menu</span>
+            </a>
+            <a href="#" class="ac-gf-directory-column-section-anchor ac-gf-directory-column-section-anchor-close" data-original-tabindex="">
+                <span class="ac-gf-directory-column-section-anchor-label">Close Menu</span>
+            </a>
+            <ul class="ac-gf-directory-column-section-list">
+                <li class="ac-gf-directory-column-section-item"><a class="ac-gf-directory-column-section-link" href="https://appleid.apple.com/us/" data-analytics-title="manage your apple id" data-analytics-exit-link="" data-original-tabindex="">Manage Your Apple&nbsp;ID</a></li>
+                <li class="ac-gf-directory-column-section-item"><a class="ac-gf-directory-column-section-link" href="/us/shop/goto/account" data-analytics-title="apple store account" data-original-tabindex="">Apple Store Account</a></li>
+                <li class="ac-gf-directory-column-section-item"><a class="ac-gf-directory-column-section-link" href="https://www.icloud.com" data-analytics-title="icloud.com" data-analytics-exit-link="" data-original-tabindex="">iCloud.com</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="ac-gf-directory-column"><input class="ac-gf-directory-column-section-state" type="checkbox" id="ac-gf-directory-column-section-state-storeservices" data-original-tabindex="">
+        <div class="ac-gf-directory-column-section">
+            <label class="ac-gf-directory-column-section-label" for="ac-gf-directory-column-section-state-storeservices">
+                <h3 class="ac-gf-directory-column-section-title">Apple Store</h3>
+            </label>
+            <a href="#ac-gf-directory-column-section-state-storeservices" class="ac-gf-directory-column-section-anchor ac-gf-directory-column-section-anchor-open" data-original-tabindex="">
+                <span class="ac-gf-directory-column-section-anchor-label">Open Menu</span>
+            </a>
+            <a href="#" class="ac-gf-directory-column-section-anchor ac-gf-directory-column-section-anchor-close" data-original-tabindex="">
+                <span class="ac-gf-directory-column-section-anchor-label">Close Menu</span>
+            </a>
+            <ul class="ac-gf-directory-column-section-list">
+                <li class="ac-gf-directory-column-section-item"><a class="ac-gf-directory-column-section-link" href="/retail/" data-analytics-title="find a store" data-original-tabindex="">Find a Store</a></li>
+                <li class="ac-gf-directory-column-section-item"><a class="ac-gf-directory-column-section-link" href="/us/shop/goto/store" data-analytics-title="shop online" data-original-tabindex="">Shop Online</a></li>
+                <li class="ac-gf-directory-column-section-item"><a class="ac-gf-directory-column-section-link" href="/retail/geniusbar/" data-analytics-title="genius bar" data-original-tabindex="">Genius Bar</a></li>
+                <li class="ac-gf-directory-column-section-item"><a class="ac-gf-directory-column-section-link" href="/today/" data-analytics-title="today at apple" data-original-tabindex="">Today at Apple</a></li>
+                <li class="ac-gf-directory-column-section-item"><a class="ac-gf-directory-column-section-link" href="/today/camp/" data-analytics-title="apple camp" data-original-tabindex="">Apple Camp</a></li>
+                <li class="ac-gf-directory-column-section-item"><a class="ac-gf-directory-column-section-link" href="https://apps.apple.com/us/app/apple-store/id375380948" data-analytics-title="apple store app" data-analytics-exit-link="" data-original-tabindex="">Apple Store App</a></li>
+                <li class="ac-gf-directory-column-section-item"><a class="ac-gf-directory-column-section-link" href="/us/shop/goto/special_deals" data-analytics-title="refurbished and clearance" data-original-tabindex="">Refurbished and Clearance</a></li>
+                <li class="ac-gf-directory-column-section-item"><a class="ac-gf-directory-column-section-link" href="/us/shop/goto/payment_plan" data-analytics-title="financing" data-original-tabindex="">Financing</a></li>
+                <li class="ac-gf-directory-column-section-item"><a class="ac-gf-directory-column-section-link" href="/us/shop/goto/trade_in" data-analytics-title="apple trade in" data-original-tabindex="">Apple&nbsp;Trade&nbsp;In</a></li>
+                <li class="ac-gf-directory-column-section-item"><a class="ac-gf-directory-column-section-link" href="/us/shop/goto/order/list" data-analytics-title="order status" data-original-tabindex="">Order Status</a></li>
+                <li class="ac-gf-directory-column-section-item"><a class="ac-gf-directory-column-section-link" href="/us/shop/goto/help" data-analytics-title="shopping help" data-original-tabindex="">Shopping Help</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="ac-gf-directory-column">
+        <input class="ac-gf-directory-column-section-state" type="checkbox" id="ac-gf-directory-column-section-state-business" data-original-tabindex="">
+        <div class="ac-gf-directory-column-section">
+            <label class="ac-gf-directory-column-section-label" for="ac-gf-directory-column-section-state-business">
+                <h3 class="ac-gf-directory-column-section-title">For Business</h3>
+            </label>
+            <a href="#ac-gf-directory-column-section-state-business" class="ac-gf-directory-column-section-anchor ac-gf-directory-column-section-anchor-open" data-original-tabindex="">
+                <span class="ac-gf-directory-column-section-anchor-label">Open Menu</span>
+            </a>
+            <a href="#" class="ac-gf-directory-column-section-anchor ac-gf-directory-column-section-anchor-close" data-original-tabindex="">
+                <span class="ac-gf-directory-column-section-anchor-label">Close Menu</span>
+            </a>
+            <ul class="ac-gf-directory-column-section-list">
+                <li class="ac-gf-directory-column-section-item"><a class="ac-gf-directory-column-section-link" href="/business/" data-analytics-title="apple and business" data-original-tabindex="">Apple and Business</a></li>
+                <li class="ac-gf-directory-column-section-item"><a class="ac-gf-directory-column-section-link" href="/retail/business/" data-analytics-title="shop for business" data-original-tabindex="">Shop for Business</a></li>
+            </ul>
+        </div>
+        <input class="ac-gf-directory-column-section-state" type="checkbox" id="ac-gf-directory-column-section-state-education" data-original-tabindex="">
+        <div class="ac-gf-directory-column-section">
+            <label class="ac-gf-directory-column-section-label" for="ac-gf-directory-column-section-state-education">
+                <h3 class="ac-gf-directory-column-section-title">For Education</h3>
+            </label>
+            <a href="#ac-gf-directory-column-section-state-education" class="ac-gf-directory-column-section-anchor ac-gf-directory-column-section-anchor-open" data-original-tabindex="">
+                <span class="ac-gf-directory-column-section-anchor-label">Open Menu</span>
+            </a>
+            <a href="#" class="ac-gf-directory-column-section-anchor ac-gf-directory-column-section-anchor-close" data-original-tabindex="">
+                <span class="ac-gf-directory-column-section-anchor-label">Close Menu</span>
+            </a>
+            <ul class="ac-gf-directory-column-section-list">
+                <li class="ac-gf-directory-column-section-item"><a class="ac-gf-directory-column-section-link" href="/education/" data-analytics-title="apple and education" data-original-tabindex="">Apple and Education</a></li>
+                <li class="ac-gf-directory-column-section-item"><a class="ac-gf-directory-column-section-link" href="/education/k12/how-to-buy/" data-analytics-title="shop for k12" data-original-tabindex="">Shop for K-12</a></li>
+                <li class="ac-gf-directory-column-section-item"><a class="ac-gf-directory-column-section-link" href="/us/shop/goto/educationrouting" data-analytics-title="shop for college" data-original-tabindex="">Shop for College</a></li>
+            </ul>
+        </div>
+        <input class="ac-gf-directory-column-section-state" type="checkbox" id="ac-gf-directory-column-section-state-healthcare" data-original-tabindex="">
+        <div class="ac-gf-directory-column-section">
+            <label class="ac-gf-directory-column-section-label" for="ac-gf-directory-column-section-state-healthcare">
+                <h3 class="ac-gf-directory-column-section-title">For Healthcare</h3>
+            </label>
+            <a href="#ac-gf-directory-column-section-state-healthcare" class="ac-gf-directory-column-section-anchor ac-gf-directory-column-section-anchor-open" data-original-tabindex="">
+                <span class="ac-gf-directory-column-section-anchor-label">Open Menu</span>
+            </a>
+            <a href="#" class="ac-gf-directory-column-section-anchor ac-gf-directory-column-section-anchor-close" data-original-tabindex="">
+                <span class="ac-gf-directory-column-section-anchor-label">Close Menu</span>
+            </a>
+            <ul class="ac-gf-directory-column-section-list">
+                <li class="ac-gf-directory-column-section-item"><a class="ac-gf-directory-column-section-link" href="/healthcare/" data-analytics-title="apple in healthcare" data-original-tabindex="">Apple in Healthcare</a></li>
+                <li class="ac-gf-directory-column-section-item"><a class="ac-gf-directory-column-section-link" href="/healthcare/apple-watch/" data-analytics-title="health on apple watch" data-original-tabindex="">Health on Apple&nbsp;Watch</a></li>
+                <li class="ac-gf-directory-column-section-item"><a class="ac-gf-directory-column-section-link" href="/healthcare/health-records/" data-analytics-title="health records on iphone" data-original-tabindex="">Health Records on iPhone</a></li>
+            </ul>
+        </div>
+        <input class="ac-gf-directory-column-section-state" type="checkbox" id="ac-gf-directory-column-section-state-government" data-original-tabindex="">
+        <div class="ac-gf-directory-column-section">
+            <label class="ac-gf-directory-column-section-label" for="ac-gf-directory-column-section-state-government">
+                <h3 class="ac-gf-directory-column-section-title">For Government</h3>
+            </label>
+            <a href="#ac-gf-directory-column-section-state-government" class="ac-gf-directory-column-section-anchor ac-gf-directory-column-section-anchor-open" data-original-tabindex="">
+                <span class="ac-gf-directory-column-section-anchor-label">Open Menu</span>
+            </a>
+            <a href="#" class="ac-gf-directory-column-section-anchor ac-gf-directory-column-section-anchor-close" data-original-tabindex="">
+                <span class="ac-gf-directory-column-section-anchor-label">Close Menu</span>
+            </a>
+            <ul class="ac-gf-directory-column-section-list">
+                <li class="ac-gf-directory-column-section-item"><a class="ac-gf-directory-column-section-link" href="/r/store/government/" data-analytics-title="shop for government" data-original-tabindex="">Shop for Government</a></li>
+                <li class="ac-gf-directory-column-section-item"><a class="ac-gf-directory-column-section-link" href="/us/shop/goto/eppstore/veteransandmilitary" data-analytics-title="shop for veterans and military" data-original-tabindex="">Shop for Veterans and Military</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="ac-gf-directory-column">
+        <input class="ac-gf-directory-column-section-state" type="checkbox" id="ac-gf-directory-column-section-state-responsibility" data-original-tabindex="">
+        <div class="ac-gf-directory-column-section">
+            <label class="ac-gf-directory-column-section-label" for="ac-gf-directory-column-section-state-responsibility">
+                <h3 class="ac-gf-directory-column-section-title">Apple Values</h3>
+            </label>
+            <a href="#ac-gf-directory-column-section-state-responsibility" class="ac-gf-directory-column-section-anchor ac-gf-directory-column-section-anchor-open" data-original-tabindex="">
+                <span class="ac-gf-directory-column-section-anchor-label">Open Menu</span>
+            </a>
+            <a href="#" class="ac-gf-directory-column-section-anchor ac-gf-directory-column-section-anchor-close" data-original-tabindex="">
+                <span class="ac-gf-directory-column-section-anchor-label">Close Menu</span>
+            </a>
+            <ul class="ac-gf-directory-column-section-list">
+                <li class="ac-gf-directory-column-section-item"><a class="ac-gf-directory-column-section-link" href="/accessibility/" data-analytics-title="accessibility" data-original-tabindex="">Accessibility</a></li>
+                <li class="ac-gf-directory-column-section-item"><a class="ac-gf-directory-column-section-link" href="/education/connectED/" data-analytics-title="education" data-original-tabindex="">Education</a></li>
+                <li class="ac-gf-directory-column-section-item"><a class="ac-gf-directory-column-section-link" href="/environment/" data-analytics-title="environment" data-original-tabindex="">Environment</a></li>
+                <li class="ac-gf-directory-column-section-item"><a class="ac-gf-directory-column-section-link" href="/diversity/" data-analytics-title="inclusion and diversity" data-original-tabindex="">Inclusion and Diversity</a></li>
+                <li class="ac-gf-directory-column-section-item"><a class="ac-gf-directory-column-section-link" href="/privacy/" data-analytics-title="privacy" data-original-tabindex="">Privacy</a></li>
+                <li class="ac-gf-directory-column-section-item"><a class="ac-gf-directory-column-section-link" href="/racial-equity-justice-initiative/" data-analytics-title="racial equity and justice" data-original-tabindex="">Racial Equity and Justice</a></li>
+                <li class="ac-gf-directory-column-section-item"><a class="ac-gf-directory-column-section-link" href="/supplier-responsibility/" data-analytics-title="supplier responsibility" data-original-tabindex="">Supplier Responsibility</a></li>
+            </ul>
+        </div>
+        <input class="ac-gf-directory-column-section-state" type="checkbox" id="ac-gf-directory-column-section-state-about" data-original-tabindex="">
+        <div class="ac-gf-directory-column-section">
+            <label class="ac-gf-directory-column-section-label" for="ac-gf-directory-column-section-state-about">
+                <h3 class="ac-gf-directory-column-section-title">About Apple</h3>
+            </label>
+            <a href="#ac-gf-directory-column-section-state-about" class="ac-gf-directory-column-section-anchor ac-gf-directory-column-section-anchor-open" data-original-tabindex="">
+                <span class="ac-gf-directory-column-section-anchor-label">Open Menu</span>
+            </a>
+            <a href="#" class="ac-gf-directory-column-section-anchor ac-gf-directory-column-section-anchor-close" data-original-tabindex="">
+                <span class="ac-gf-directory-column-section-anchor-label">Close Menu</span>
+            </a>
+            <ul class="ac-gf-directory-column-section-list">
+                <li class="ac-gf-directory-column-section-item"><a class="ac-gf-directory-column-section-link" href="/newsroom/" data-analytics-title="newsroom" data-original-tabindex="">Newsroom</a></li>
+                <li class="ac-gf-directory-column-section-item"><a class="ac-gf-directory-column-section-link" href="/leadership/" data-analytics-title="apple leadership" data-original-tabindex="">Apple Leadership</a></li>
+                <li class="ac-gf-directory-column-section-item"><a class="ac-gf-directory-column-section-link" href="/careers/us/" data-analytics-title="career opportunities" data-original-tabindex="">Career Opportunities</a></li>
+                <li class="ac-gf-directory-column-section-item"><a class="ac-gf-directory-column-section-link" href="https://investor.apple.com/" data-analytics-title="investors" data-analytics-exit-link="" data-original-tabindex="">Investors</a></li>
+                <li class="ac-gf-directory-column-section-item"><a class="ac-gf-directory-column-section-link" href="/compliance/" data-analytics-title="ethics and compliance" data-original-tabindex="">Ethics &amp; Compliance</a></li>
+                <li class="ac-gf-directory-column-section-item"><a class="ac-gf-directory-column-section-link" href="/apple-events/" data-analytics-title="events" data-original-tabindex="">Events</a></li>
+                <li class="ac-gf-directory-column-section-item"><a class="ac-gf-directory-column-section-link" href="/contact/" data-analytics-title="contact apple" data-original-tabindex="">Contact Apple</a></li>
+            </ul>
+        </div>
+    </div>
+    <!--googleon: all-->
+</nav>
+
+<section class="ac-gf-footer">
+    <div class="ac-gf-footer-shop" x-ms-format-detection="none">
+        More ways to shop: <a href="/retail/" data-analytics-title="find an apple store" data-original-tabindex="">Find an Apple Store</a> or <a href="https://locate.apple.com/" data-analytics-title="other retailers or resellers" data-analytics-exit-link="" data-original-tabindex="">other retailer</a> near you. <span class="nowrap">Or call 1-800-MY-APPLE.</span>
+    </div>
+    <div class="ac-gf-footer-locale">
+        <a class="ac-gf-footer-locale-link" href="/choose-country-region/" title="Choose your country or region" aria-label="United States. Choose your country or region" data-analytics-title="choose your country" data-original-tabindex="">United States</a>
+    </div>
+    <div class="ac-gf-footer-legal">
+        <div class="ac-gf-footer-legal-copyright">Copyright ©
+            
+            2021
+             Apple Inc. All rights reserved.
+        </div>
+        <div class="ac-gf-footer-legal-links">
+            <a class="ac-gf-footer-legal-link" href="/legal/privacy/" data-analytics-title="privacy policy" data-original-tabindex="">Privacy Policy</a>
+            <a class="ac-gf-footer-legal-link" href="/legal/internet-services/terms/site.html" data-analytics-title="terms of use" data-original-tabindex="">Terms of Use</a>
+            <a class="ac-gf-footer-legal-link" href="/us/shop/goto/help/sales_refunds" data-analytics-title="sales and refunds" data-original-tabindex="">Sales and Refunds</a>
+            <a class="ac-gf-footer-legal-link" href="/legal/" data-analytics-title="legal" data-original-tabindex="">Legal</a>
+            <a class="ac-gf-footer-legal-link" href="/sitemap/" data-analytics-title="site map" data-original-tabindex="">Site Map</a>
+        </div>
+    </div>
+</section>
+
+<script type="text/javascript" src="/ac/globalfooter/6/en_US/scripts/ac-globalfooter.built.js"></script>
+<script type="application/ld+json">
+{
+    "@context": "http://schema.org",
+    "@id": "https://www.apple.com/#organization",
+    "@type": "Organization",
+    "name": "Apple",
+    "url": "https://www.apple.com/",
+    "logo": "https://www.apple.com/ac/structured-data/images/knowledge_graph_logo.png?201809210816",
+    "subOrganization": {
+        "@type": "Organization",
+        "name": "Apple Support",
+        "url": "https://support.apple.com",
+    "@id": "https://support.apple.com/#organization"
+    },
+    "contactPoint": [
+        {
+            "@type": "ContactPoint",
+            "telephone": "+1-800-692-7753",
+            "contactType": "sales",
+            "areaServed": "US"
+        },
+        {
+            "@type": "ContactPoint",
+            "telephone": "+1-800-275-2273",
+            "contactType": "technical support",
+            "areaServed": "US",
+            "availableLanguage": ["EN", "ES"]
+        },
+        {
+            "@type": "ContactPoint",
+            "telephone": "+1-800-275-2273",
+            "contactType": "customer support",
+            "areaServed": "US",
+            "availableLanguage": ["EN", "ES"]
+        }
+    ],
+    "sameAs": [
+        "http://www.wikidata.org/entity/Q312",
+        "https://www.youtube.com/user/Apple",
+        "https://www.linkedin.com/company/apple",
+        "https://www.facebook.com/Apple",
+        "https://www.twitter.com/Apple"
+    ]
+}
+</script>
+
+<script type="text/javascript" src="/ac/localeswitcher/3/en_US/scripts/localeswitcher.built.js"></script>
+
+    </div>
+</footer>
+</main>
+</body>
+
+</html>
